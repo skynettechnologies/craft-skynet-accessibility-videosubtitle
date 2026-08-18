@@ -1,0 +1,658 @@
+/* ============================================================
+    DESIGN SYSTEM – matches Figma + original component palette
+    ============================================================ */
+#settings-app {
+    --primary: #420083;
+    --primary-dark: #5A52D5;
+    --primary-light: #F1EEFF;
+    --accent: #FF6B6B;
+    --success: #2ECC71;
+    --warning: #F39C12;
+    --danger: #E74C3C;
+    --dark: #20223B;
+    --gray: #8A8DA6;
+    --light-gray: #F8F7FC;
+    --border: #ECEAF7;
+    --white: #FFFFFF;
+}
+
+#settings-app body{
+    background: var(--light-gray);
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    color: var(--dark);
+    padding: 1.5rem;
+}
+
+#settings-app .card-flat{
+    border-radius: 16px;
+    box-shadow: 0 1px 4px rgba(32, 34, 59, 0.06);
+    border: none;
+    background: var(--white);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+#settings-app .card-flat:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(32, 34, 59, 0.10);
+}
+
+#settings-app .video-container{
+    border-radius: 16px;
+    box-shadow: 0 1px 4px rgba(32, 34, 59, 0.06);
+    background: var(--white);
+    padding: 1.5rem;
+}
+
+#settings-app .stat-card{
+    border-radius: 16px;
+    box-shadow: 0 1px 4px rgba(32, 34, 59, 0.06);
+    border: none;
+    background: var(--white);
+    height: 100%;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+#settings-app .stat-card:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(32, 34, 59, 0.10);
+}
+
+#settings-app .icon-box{
+    width: 50px;
+    height: 50px;
+    min-width: 50px;
+    border-radius: 12px;
+    background: var(--primary-light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#settings-app .icon-box i{
+    color: var(--primary);
+    font-size: 24px;
+}
+
+#settings-app .page-header{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    background: linear-gradient(78deg, #D5D1FD 10.33%, #EDEBFF 121.25%);
+    padding: 15px;
+    border-radius: 11px;
+}
+#settings-app .page-header h1{
+    font-weight: 700;
+    font-size: 1.75rem;
+    color: var(--dark);
+    margin: 0;
+}
+#settings-app .header-right{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.75rem;
+}
+#settings-app .badge-status{
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    font-size: 0.8rem;
+}
+#settings-app .plan-price-badge{
+    color: var(--primary);
+    padding: 0.3rem 1rem;
+    border-radius: 999px;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+#settings-app .plan-price-badge i{
+    margin-right: 0.3rem;
+}
+
+#settings-app .plan-card{
+    border-radius: 16px;
+    border: 1px solid var(--border);
+    transition: box-shadow 0.2s, transform 0.2s;
+    height: 100%;
+    background: var(--white);
+}
+#settings-app .plan-card:hover{
+    box-shadow: 0 8px 24px rgba(32, 34, 59, 0.08);
+    transform: translateY(-3px);
+}
+#settings-app .plan-card .card-header{
+    background: var(--primary-light);
+    border-bottom: none;
+    font-weight: 700;
+    font-size: 1.2rem;
+    padding: 1rem 1.25rem;
+    border-radius: 16px 16px 0 0 !important;
+    color: var(--primary);
+}
+#settings-app .plan-card .card-body{
+    padding: 1.25rem;
+}
+#settings-app .plan-features{
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1.25rem 0;
+}
+#settings-app .plan-features li{
+    padding: 0.4rem 0;
+    font-size: 0.9rem;
+    color: var(--dark);
+    border-bottom: 1px solid var(--border);
+}
+#settings-app .plan-features li:last-child{
+    border-bottom: none;
+}
+#settings-app .plan-price{
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--primary);
+}
+#settings-app .plan-price small{
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: var(--gray);
+}
+#settings-app .plan-btn{
+    margin-top: 1rem;
+    width: 100%;
+    padding: 0.6rem;
+    border-radius: 999px;
+    font-weight: 600;
+}
+
+#settings-app .thumb-wrapper{
+    position: relative;
+    padding-top: 56.25%;
+    background: #f0edf7;
+}
+#settings-app .thumb-wrapper img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#settings-app .play-badge{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.85);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary);
+    font-size: 18px;
+    transition: background 0.2s;
+}
+#settings-app .video-card{
+    border-radius: 12px;
+    box-shadow: 0 1px 4px rgba(32, 34, 59, 0.06);
+    transition: transform 0.15s, box-shadow 0.15s;
+    cursor: pointer;
+    overflow: hidden;
+    background: var(--white);
+    border: none;
+    height: 100%;
+}
+#settings-app .video-card:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(32, 34, 59, 0.10);
+}
+#settings-app .video-card:hover .play-badge{
+    background: rgba(255, 255, 255, 0.95);
+}
+
+#settings-app .circular-progress{
+    position: relative;
+    width: 180px;
+    height: 180px;
+}
+#settings-app .circular-progress svg{
+    transform: rotate(-90deg);
+}
+#settings-app .circular-progress .center-text{
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#settings-app .circular-progress .center-text .pct{
+    font-size: 34px;
+    font-weight: 700;
+    color: var(--primary);
+    line-height: 1;
+}
+#settings-app .circular-progress .center-text .label{
+    font-size: 15px;
+    font-weight: 600;
+    margin-top: 4px;
+    color: var(--gray);
+}
+
+#settings-app .filter-select{
+    border-radius: 8px;
+    padding: 0.3rem 2rem 0.3rem 1rem;
+    border: 1px solid var(--border);
+    background: var(--white);
+    font-size: 0.875rem;
+    min-width: 140px;
+    appearance: auto;
+}
+#settings-app .filter-select:focus{
+    border-color: var(--primary);
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(66, 0, 131, 0.15);
+}
+
+#settings-app .btn-outline-filter{
+    border-radius: 8px;
+    border: 1px solid var(--border);
+    background: var(--white);
+    color: var(--dark);
+    font-size: 0.875rem;
+    padding: 0.3rem 0.75rem;
+    transition: all 0.15s;
+}
+#settings-app .btn-outline-filter:hover{
+    border-color: var(--primary);
+    background: var(--primary-light);
+}
+#settings-app .btn-outline-filter i{
+    margin-right: 6px;
+}
+
+#settings-app .dropdown-menu-custom{
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(32, 34, 59, 0.10);
+    border: none;
+    padding: 10px;
+    min-width: 280px;
+}
+#settings-app .dropdown-menu-custom .dropdown-item{
+    border-radius: 8px;
+    padding: 0.4rem 1rem;
+}
+#settings-app .dropdown-menu-custom .dropdown-item:hover{
+    background: var(--primary-light);
+}
+
+#settings-app .video-modal .modal-content{
+    border-radius: 20px;
+    border: none;
+}
+#settings-app .video-modal .modal-header{
+    border-radius: 20px 20px 0 0;
+    padding: 1.25rem 1.5rem;
+    border-bottom: none;
+}
+#settings-app .video-modal .modal-body{
+    border-radius: 0 0 20px 20px;
+    padding: 0 1.5rem 1.5rem;
+}
+#settings-app .upgrade-modal .modal-content{
+    border-radius: 20px;
+    border: none;
+    overflow: hidden;
+}
+#settings-app .upgrade-modal .modal-header{
+    border-radius: 20px 20px 0 0;
+    border-bottom: none;
+    padding: 1.25rem 1.5rem 0.75rem;
+}
+#settings-app .upgrade-modal .modal-title{
+    font-weight: 700;
+    font-size: 1.6rem;
+    color: var(--dark);
+}
+#settings-app .upgrade-modal .modal-body{
+    background: #f4f1fb;
+    border-radius: 0 0 20px 20px;
+    padding: 1.5rem;
+}
+
+/* Red rounded close button (matches design) */
+#settings-app .upgrade-close-btn{
+    background: #d92d2d;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    width: 42px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    line-height: 1;
+    transition: background 0.15s;
+}
+#settings-app .upgrade-close-btn:hover{
+    background: #bf2323;
+    color: #fff;
+}
+
+/* Selectable plan option list */
+#settings-app .plan-option-list{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+#settings-app .plan-option{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background: var(--white);
+    border: 2px solid transparent;
+    border-radius: 14px;
+    padding: 1.1rem 1.5rem;
+    cursor: pointer;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+#settings-app .plan-option:hover{
+    border-color: #e0daf4;
+}
+#settings-app .plan-option.selected{
+    border-color: var(--primary);
+    box-shadow: 0 2px 12px rgba(66, 0, 131, 0.10);
+}
+#settings-app .plan-option:focus-visible{
+    outline: none;
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px rgba(66, 0, 131, 0.15);
+}
+#settings-app .plan-option .plan-radio{
+    width: 22px;
+    height: 22px;
+    min-width: 22px;
+    border-radius: 50%;
+    background: #b9b9c4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#settings-app .plan-option.selected .plan-radio{
+    background: transparent;
+    border: 2px solid var(--primary);
+}
+#settings-app .plan-option.selected .plan-radio::after{
+    content: '';
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    background: var(--primary);
+}
+#settings-app .plan-option .plan-info{
+    flex: 1;
+    min-width: 0;
+}
+#settings-app .plan-option .plan-name{
+    font-weight: 700;
+    color: var(--primary);
+    font-size: 1.2rem;
+    margin-bottom: 2px;
+}
+#settings-app .plan-option .plan-desc{
+    color: var(--gray);
+    font-size: 0.9rem;
+    margin: 0;
+}
+#settings-app .plan-option .plan-desc strong{
+    color: var(--primary);
+    font-weight: 700;
+}
+#settings-app .plan-option .plan-amount{
+    font-weight: 700;
+    font-size: 1.35rem;
+    color: var(--dark);
+    white-space: nowrap;
+}
+#settings-app .upgrade-select-btn{
+    border-radius: 10px;
+    font-weight: 700;
+    background-color: var(--primary);
+    color: #fff;
+    padding: 0.65rem 2.25rem;
+    font-size: 1rem;
+}
+#settings-app .upgrade-select-btn:hover{
+    background-color: #340068;
+    color: #fff;
+}
+
+@media (max-width: 576px) {
+    #settings-app .plan-option{
+        flex-wrap: wrap;
+        padding: 1rem;
+    }
+    #settings-app .plan-option .plan-amount{
+        width: 100%;
+        text-align: left;
+        padding-left: 38px;
+    }
+}
+
+#settings-app .alert-quota{
+    border-radius: 12px;
+    border: none;
+}
+
+#settings-app .legend-dot{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+/* Config panel */
+#settings-app .config-panel{
+    background: var(--white);
+    border-radius: 16px;
+    padding: 1.25rem 1.5rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 1px 4px rgba(32, 34, 59, 0.06);
+}
+#settings-app .config-panel label{
+    font-weight: 600;
+    font-size: 0.85rem;
+    color: var(--gray);
+    margin-bottom: 0.25rem;
+}
+#settings-app .config-panel .form-control{
+    border-radius: 8px;
+    border: 1px solid var(--border);
+    font-size: 0.9rem;
+}
+#settings-app .config-panel .form-control:focus{
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px rgba(66, 0, 131, 0.15);
+}
+
+#settings-app .spinner-overlay{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 0;
+}
+
+#settings-app .icon-sm{
+    font-size: 16px;
+    vertical-align: -2px;
+    margin-right: 4px;
+}
+#settings-app .icon-md{
+    font-size: 20px;
+    vertical-align: -2px;
+}
+#settings-app .text-muted-light{
+    color: var(--gray);
+}
+#settings-app .gap-2{
+    gap: 0.5rem;
+}
+#settings-app .gap-3{
+    gap: 1rem;
+}
+#settings-app .fw-600{
+    font-weight: 600;
+}
+
+#settings-app .toggle-hint{
+    font-size: 0.7rem;
+    color: var(--gray);
+    opacity: 0.6;
+    margin-left: 0.5rem;
+    cursor: default;
+}
+
+#settings-app .error-banner{
+    border-radius: 12px;
+    padding: 1rem 1.25rem;
+    background: #FEF2F2;
+    border-left: 4px solid var(--danger);
+    color: #991B1B;
+}
+
+#settings-app .upgrade-plan-btn{
+    border-radius: 10px;
+    font-weight: 600;
+    background-color: #420083;
+    color: #fff;
+}
+
+#settings-app .upgrade-plan-btn:hover{
+    border-radius: 10px;
+    font-weight: 600;
+    background-color: #420083;
+    color: #fff;
+}
+
+#settings-app .widget-language-setting{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#settings-app .form-switch .form-check-input{
+    width: 43px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    margin-right: 9px;
+}
+
+#settings-app .form-check-input:checked{
+    background-color: #420083;
+    border-color: #420083;
+}
+
+@media (max-width: 576px) {
+    #settings-app body{
+        padding: 0.75rem;
+    }
+    #settings-app .stat-card .card-body{
+        padding: 1rem !important;
+    }
+    #settings-app .stat-card .stat-value{
+        font-size: 24px !important;
+    }
+    #settings-app .circular-progress{
+        width: 140px;
+        height: 140px;
+    }
+    #settings-app .circular-progress .center-text .pct{
+        font-size: 28px;
+    }
+    #settings-app .video-container{
+        padding: 1rem;
+    }
+    #settings-app .page-header h1{
+        font-size: 1.3rem;
+    }
+    #settings-app .config-panel .row>div{
+        margin-bottom: 0.75rem;
+    }
+}
+@media (max-width: 768px) {
+    #settings-app .filters-row{
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+    #settings-app .filters-row .col-auto{
+        flex: 1 1 auto;
+        min-width: 120px;
+    }
+    #settings-app .header-right{
+        width: 100%;
+        justify-content: flex-start;
+    }
+}
+.modal {
+    position: fixed!important;
+    top: 50%!important;
+    left: 50%!important;
+    width: 50% !important;
+    transform: translate(-50%, -50%)!important;
+    overflow-y: auto;
+    scrollbar-width: none; /* Firefox */
+}
+.btn {
+
+    --bs-btn-padding-x: 1rem !important;
+}
+#upgradeSelectBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    width: 20% !important;
+    height: 20% !important;
+}
+.modal-dialog {
+    margin: auto !important;
+}
+#settings-app .badge-status {
+
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+   
+    height: auto !important;
+}
+.card:not(.chromeless)::before,
+.chip:not(.chromeless)::before,
+.matrixblock:not(.chromeless)::before {
+    border-radius: unset;
+    box-shadow: none;
+    content: none;
+    inset: auto;
+    pointer-events: auto;
+    position: static;
+    z-index: auto;
+}
+a{
+    text-decoration: none!important;
+}
+.btngroup .btn:not(.dashed,:last-child,.btngroup-btn-last) {
+    margin-inline-end: unset !important;
+}
+dl,ol, ul {
+    padding-left: 0rem !important;
+    margin-bottom: 0rem !important;
+}
+#action-buttons
+{
+    display: none!important;
+}
