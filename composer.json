@@ -2,7 +2,14 @@
   "name": "skynettechnologies/craft-skynet-accessibility-videosubtitle",
   "description": "Publish Captioned Video Content with AI-Powered Subtitles!",
   "type": "craft-plugin",
-  "keywords": [""],
+  "keywords": [
+    "craftcms",
+    "accessibility",
+    "video",
+    "subtitle",
+    "captions",
+    "wcag"
+  ],
   "license": "MIT",
   "authors": [
     {
