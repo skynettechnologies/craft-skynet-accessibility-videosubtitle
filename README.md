@@ -2,9 +2,9 @@
 
 ## Publish Captioned Video Content with AI-Powered Subtitles
 
-[SkynetAccessibility Video Title](https://www.skynettechnologies.com/video-accessibility) is an AI-powered video accessibility plugin for Sanity that automatically generates synchronized subtitles for website videos using advanced speech recognition.
+[SkynetAccessibility Video Title](https://www.skynettechnologies.com/video-accessibility) is an AI-powered video accessibility plugin for Craft CMS that automatically generates synchronized subtitles for website videos using advanced speech recognition.
 
-Improve the accessibility of website videos by automatically generating synchronized subtitles using AI-powered speech recognition. It integrates with Sanity, making it easier to publish accessible multimedia content without manually creating captions. Supports accessibility initiatives aligned with WCAG 2.1, 2.2, ADA, Section 508, and EAA EN 301 549, where applicable.
+Improve the accessibility of website videos by automatically generating synchronized subtitles using AI-powered speech recognition. It integrates with Craft CMS, making it easier to publish accessible multimedia content without manually creating captions. Supports accessibility initiatives aligned with WCAG 2.1, 2.2, ADA, Section 508, and EAA EN 301 549, where applicable.
 
 ### Features
 
@@ -90,11 +90,11 @@ Alternatively, you can send an email to our support team: [hello@skynettechnolog
 
 #### **[Accessibility Agency Partnership](https://www.skynettechnologies.com/agency-partners)**
 
-Partner with us as an agency to provide comprehensive SANITY ADA, EAA, WCAG accessibility solutions to clients. Get access to exclusive resources, training, and support to implement and manage accessibility features effectively.
+Partner with us as an agency to provide comprehensive ADA, EAA, WCAG accessibility solutions to clients. Get access to exclusive resources, training, and support to implement and manage accessibility features effectively.
 
 #### **[Accessibility Affiliate Partnership](https://www.skynettechnologies.com/affiliate-partner)**
 
-Sign up for our affiliate program and earn commissions by promoting accessibility SANITY plugin. Share our widget with your network and help businesses improve their website accessibility while generating revenue.
+Sign up for our affiliate program and earn commissions by promoting accessibility Craft CMS plugin. Share our widget with your network and help businesses improve their website accessibility while generating revenue.
 
 For more details, explore **[Accessibility Partnership Opportunities Page](https://www.skynettechnologies.com/partner-program)**.
 
